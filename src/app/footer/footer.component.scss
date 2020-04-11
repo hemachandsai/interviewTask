@@ -1,0 +1,114 @@
+$base-color: #e4b95b;
+$text-color-secondary: #7a7676;
+.wrapper{
+    position: relative;
+    text-align: center;
+    background-image: url("../../assets/images/banner1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    border-bottom: 10px solid $base-color;
+    padding: 10% 0 2.5%;
+    .logo{
+        width: fit-content;
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    h2{
+        font-weight: 500;
+        color: $base-color;
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+    p{
+        white-space: pre;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    .data-block{
+        .copyright,.social-media{
+            margin-bottom: 15px;
+        }
+        .copyright{
+            text-align: left;
+            font-size: 1.5rem;
+            color: $text-color-secondary;
+        }
+        ul{
+            display: flex;
+            list-style: none;
+            color: white;
+            margin-bottom: 0px;
+            width: auto;
+            float: right;
+            margin-right: auto;
+            li{
+                border: 2px solid #383848;
+                padding: 15px;
+                border-radius: 50%;
+                background: transparent;
+                margin-left: 20px;
+                i{
+                    width: 20px;
+                    color: white;
+                }
+            }
+        }
+    }
+    .curve-up{
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%, -100%);
+    } 
+    .curve-down{
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+    }   
+}
+@media(min-width: 320px) and (max-width: 576px){
+    .data-block{
+        div:first-child{
+            text-align: center !important;
+        }
+        ul{
+            justify-content: center;     
+            float: unset !important; 
+        }
+    } 
+    .wrapper{
+        padding: 25% 0 18%;
+    }
+}
+@media(min-width: 576px) and (max-width: 786px){
+    .data-block{
+        div:first-child{
+            text-align: center !important;
+        }
+        ul{
+            justify-content: center;     
+            float: unset !important; 
+        }
+    } 
+    .wrapper{
+        padding: 16% 0 8%;
+    }
+}
+@media(min-width: 786px) and (max-width: 992px){
+    .data-block{
+        div:first-child{
+            text-align: center !important;
+        }
+        ul{
+            justify-content: center;     
+            float: unset !important; 
+        }
+    } 
+    .wrapper{
+        padding: 10% 0 8%;
+    }
+}

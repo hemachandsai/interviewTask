@@ -1,0 +1,72 @@
+<div class="wrapper">
+    <div class="wrapper-top" *ngIf="showBanner">
+        <div class="header-top container">
+            <div class="header-top-left">
+                <img src="../../assets/icons/fon.png">
+                <span>123-456-7890</span>
+                <span>support@laboom.com</span>
+            </div>
+            <div class="header-top-right">
+                <ul class="social-media">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google"></i></a></li>
+                </ul>
+                <div class="language-menu">
+                    <span>English<i class="fa fa-caret-down"></i></span>
+                    <ul class="languages">
+                        <li><a href="#"><i class="fa fa-angle-right"></i>Turkish</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i>Nederlands</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i>French</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i>Dutch</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i>Italiano</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper-bottom">
+        <div class="container">
+            <nav>
+                <div class="nav-items">
+                    <div class="nav-item" *ngFor="let item of ['Home', 'Menu', 'Shop', 'Pages', 'Blog', 'Contact']; let i=index;">
+                        <a href="#">{{ item }}</a>
+                        <div class="menu-list">
+                            <ul>
+                                <li>HomePage {{i + 1}}</li>
+                                <li>HomePage {{i + 2}}</li>
+                                <li>HomePage {{i + 3}}</li>
+                                <li>HomePage {{i + 4}}</li>
+                                <li>HomePage {{i + 5}}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo" [ngStyle]="{'transform': showBanner ? 'scale(1)' : 'scale(0.65)', 'marginTop' : showBanner ? '-50px' : '-33px'}">
+                    <img src="../../assets/logos/logo.png">
+                </div>
+                <div class="block">
+                    <div class="booking">
+                        <img src="../../assets/icons/icon-table.png">
+                        <span>Book a Table</span>
+                    </div>
+                    <div class="cart">
+                        <img src="../../assets/icons/icon-basket.png">
+                        <span>2 items - $ 20.89</span>
+                    </div>
+                    <div class="search">
+                        <img [src]="searchToggled ? '../../assets/icons/close.png' : '../../assets/icons/icon-zoom.png'" (click)="toggleSearch()">
+                        <div class="search-bar" *ngIf="searchToggled">
+                            <input type="text" placeholder="Search">
+                            <img src="../../assets/icons/icon-zoom.png">
+                        </div>
+                    </div>
+                </div>
+    
+            </nav>
+        </div>
+    </div>
+</div>
