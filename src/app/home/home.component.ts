@@ -7,13 +7,13 @@ import { Component, OnInit, AfterViewInit, ViewChild, ElementRef, HostListener }
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit, AfterViewInit {
-  @ViewChild('carousel1', {static: false}) carousel1: ElementRef;
   @ViewChild('foodTiming', {static: false}) foodTiming: ElementRef;
   @ViewChild('unorderedList', {static: false}) unorderedList: ElementRef;
   @ViewChild('menuItemsList', {static: false}) menuItemsList: ElementRef;
   carouselSettings = {
     loop: true,
     margin: 30,
+    stagePadding: 10,
     items: 3,
     responsiveClass: true,
     nav: true,

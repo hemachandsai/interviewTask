@@ -194,7 +194,7 @@ ul{
     .logo{
         position: absolute;
         top: 0;
-        left: 45%;
+        left: 50%;
         z-index: 4;
         margin-top: -50px;
     }
@@ -236,3 +236,71 @@ ul{
         }
     }
 }
+
+@media(min-width: 944px) and (max-width: 1200px){
+   .nav-item a{
+       margin: 0 10px !important;
+       font-size: 1.2rem;
+   }
+   .container{
+       padding-left: 5px;
+       padding-right: 5px;
+       max-width: 98%;
+   }
+   .block{
+       *{
+            font-size: 1.1rem;
+            margin-right: 10px;
+            img{
+                font-size: 0.4rem;
+                margin-right: 10px;
+            }
+       }
+   }
+}
+@media(min-width: 873px) and (max-width: 943px){
+    .nav-item a{
+        margin: 0 5px !important;
+        font-size: 1rem;
+    }
+    .container{
+        padding-left: 5px;
+        padding-right: 5px;
+        max-width: 98%;
+    }
+    .block{
+        *{
+             font-size: 1rem;
+             margin-right: 5px;
+             img{
+                font-size: 0.4rem;
+                margin-right: 10px;
+            }
+        }
+    }
+    .section10{
+        .data-block{
+            i{
+                // font-size: 1.2rem;
+            }
+        }
+    }
+ }
+
+ @media(max-width: 971px){
+    .nav-item a{
+        margin: 0 5px !important;
+        font-size: 1rem;
+    }
+    .container{
+        padding-left: 5px;
+        padding-right: 5px;
+        max-width: 98%;
+    }
+    .block, .nav-items{
+        display: none !important;
+    }
+    nav{
+        height: 66px;
+    }
+ }

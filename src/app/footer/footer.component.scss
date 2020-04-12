@@ -9,6 +9,7 @@ $text-color-secondary: #7a7676;
     color: white;
     border-bottom: 10px solid $base-color;
     padding: 10% 0 2.5%;
+    width: 100%;
     .logo{
         width: fit-content;
         position: absolute;
@@ -75,13 +76,21 @@ $text-color-secondary: #7a7676;
         div:first-child{
             text-align: center !important;
         }
-        ul{
+        div.social-media ul{
             justify-content: center;     
             float: unset !important; 
+             li{
+                margin-right: 10px;
+                margin-left: 10px;
+                padding: 3px;
+            }
         }
     } 
     .wrapper{
-        padding: 25% 0 18%;
+        padding: 25% 0 18%;    
+        p{
+            font-size: 1rem;
+        }
     }
 }
 @media(min-width: 576px) and (max-width: 786px){
